@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editor swap/backup
+*.swp
+*.swo
+*~
+
+# Secrets — never commit these
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+known_hosts
+authorized_keys
+.aws/
+.ssh/
+credentials
+credentials.json
+.netrc

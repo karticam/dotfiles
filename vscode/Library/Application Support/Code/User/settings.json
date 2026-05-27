@@ -1,0 +1,87 @@
+{
+  "files.autoSave": "afterDelay",
+  "clangd.arguments": [
+    "--header-insertion=never",
+    "--compile-commands-dir=${workspaceFolder}/",
+    "--query-driver=**",
+    "--path-mappings=/private/var/tmp/_bazel_kartica.modi/723c1d337395ca9fab4b200cbb7941cb/execroot/io_ray/bazel-out/darwin_arm64-opt/bin/src/ray/gcs/_virtual_includes/gcs_task_manager/=${workspaceFolder}/src/"
+  ],
+  "clangd.enable": false,
+  "chat.viewSessions.orientation": "stacked",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.promptForLocalFileProtocolHandling": false,
+  "claudeCode.preferredLocation": "panel",
+  "editor.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, Meslo",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    {
+      "before": ["J"],
+      "after": ["1", "0", "j", "z", "z"]
+    },
+    {
+      "before": ["K"],
+      "after": ["1", "0", "k", "z", "z"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["z", "h"],
+      "commands": ["editorScroll", {
+        "to": "left",
+        "by": "halfPage"
+      }]
+    },
+    {
+      "before": ["z", "l"],
+      "commands": ["editorScroll", {
+        "to": "right",
+        "by": "halfPage"
+      }]
+    }
+  ],
+
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-u>": true
+  },
+
+  "editor.lineNumbers": "relative",
+  "editor.largeFileOptimizations": false
+}

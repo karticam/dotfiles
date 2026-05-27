@@ -1,0 +1,30 @@
+" Leader
+let mapleader = " "
+source ~/.vimrc
+
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set clipboard+=unnamedplus
+set scrolloff=8
+
+" CLion / IdeaVim navigation
+map <leader>d <Action>(GotoDeclaration)
+map <leader>m <Action>(GotoImplementation)
+map <leader>u <Action>(FindUsages)
+map <leader>r <Action>(GotoRelatedSymbol)
+
+map <leader>b <Action>(Back)
+map <leader>f <Action>(Forward)
+
+" Scrolling
+map <C-d> <C-d>zz
+map <C-u> <C-u>zz
+map J 10jzz
+map K 10kzz
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
