@@ -2,7 +2,11 @@ syntax on            " Enables syntax highlighting
 filetype on          " Enables filetype detection
 filetype plugin on   " Loads filetype-specific plugins
 filetype indent on   " Enables filetype-specific indentation
-xnoremap / <Esc>/\%>'<-1l\%<'+1l
+
+" Following command is used to remap visual selection + / to searching
+" visual selection. But it doesn't work with .ideavimrc. So commenting it
+" out.
+" xnoremap / <Esc>/<C-r>='\%>'.(line("'<")-1).'l\%<'.(line("'>")+1).'l'<CR>
 
 " Insert-mode movement mappings using Option/Meta key
 
