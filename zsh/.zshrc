@@ -161,6 +161,14 @@ gwtrf() {
   git worktree remove --force "$1"
 }
 
+rcat() { ssh devbox "cat $1" | pbcopy && echo "Copied!"; }
+
 # Source local-only / machine-specific settings (tokens, internal URLs, etc.)
 # This file is not tracked in git. See ~/.zshrc.local
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+rpng() {
+  local dest="${1:-/tmp/clip-$(date +%s).png}"
+  pngpaste - | ssh devbox "cat > '$dest'" || return 1
+  echo "devbox:$dest"
+}

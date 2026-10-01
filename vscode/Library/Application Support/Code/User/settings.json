@@ -83,5 +83,11 @@
   },
 
   "editor.lineNumbers": "relative",
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
